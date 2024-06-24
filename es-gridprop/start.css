@@ -7,7 +7,7 @@
 body{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: auto;
+    grid-template-rows: 0.3fr 1fr 0.3fr;
     grid-template-areas: 
     "green green green"
     "yellow red blue"
@@ -21,8 +21,18 @@ body{
 #yellow{
     grid-area: yellow;
 }
+#yellow ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
 #red{
     grid-area: red;
+}
+#red ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
 }
 #blue{
     grid-area: blue;
